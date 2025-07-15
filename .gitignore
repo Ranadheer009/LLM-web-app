@@ -1,0 +1,49 @@
+# === Python Bytecode ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# === Virtual Environments ===
+venv/
+.env/
+env/
+.venv/
+
+# === Environment Variables ===
+*.env
+
+# === Logs ===
+*.log
+
+# === Docker Artifacts ===
+*.pid
+*.pid.lock
+*.sock
+*.db
+*.sqlite3
+
+# === Jupyter Notebooks Checkpoints (if used) ===
+.ipynb_checkpoints/
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === VS Code and IDE files ===
+.vscode/
+.idea/
+*.swp
+
+# === Build and Distribution Files ===
+build/
+dist/
+*.egg-info/
+*.egg
+
+# === __pycache__ in subfolders ===
+**/__pycache__/
+
+# === Streamlit Cache (if enabled) ===
+.streamlit/
