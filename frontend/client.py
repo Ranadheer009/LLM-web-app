@@ -9,9 +9,10 @@ backend_url = os.getenv("URL")
 st.title("Text genetation app")
 
 user_input = st.text_input("Enter your prompt here")
+enable_web = st.toggle("Enable Web Search")
 if st.button("Generate"):
     if user_input:
-        responce = requests.post(f"{backend_url}/groq", json={"prompt": user_input})
+        responce = requests.post(f"{backend_url}/groq", json={"prompt": user_input,"enable_web":enable_web})
         if responce.status_code == 200:
             st.success(responce.json().get("response", "No response from server"))
         else:
