@@ -53,4 +53,4 @@ def get_responce_from_groq(prompt: Prompt):
     else:
         response = chat_with_groq(prompt.prompt)
 
-    return {"response": response.strip()}  
+    return {"response": response.content.strip()}  
